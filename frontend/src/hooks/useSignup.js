@@ -16,6 +16,7 @@ const handleInputError = ({ fullName, username, password, confirmPassword, gende
 
     if (password.length < 4) {
         toast.error("Passwords must be at least 4 characters.")
+        return false
     }
 
     return true
